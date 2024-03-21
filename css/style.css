@@ -1,0 +1,18 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+}

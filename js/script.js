@@ -36,12 +36,21 @@ const team = [
     }
 ];
 
+const tableContainer = document.querySelector('#table');
 //MILESTONE 1:
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for(let i = 0; i < team.length; i++) {
     const thisMember = team[i];
     console.log(`nome: ${thisMember.teamName}, ruolo: ${thisMember.teamRole}, immagine: ${thisMember.teamImage}`);
-}
 
+    const newTable = `
+    <tr>
+        <td>${thisMember.teamName}</td>
+        <td>${thisMember.teamRole}</td>
+        <td>${thisMember.teamImage}</td>
+    </tr>`;
+
+    tableContainer.innerHTML += newTable;
+}
 //MILESTONE 2:
 //Stampare le stesse informazioni su DOM sottoforma di stringhe
